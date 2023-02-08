@@ -7,7 +7,7 @@ else
 return "";
 }
 
-var s="h. Wells"
+var s="H. G. Wells"
 let r=validate(s);
 if(r.length>0)
 console.log("true");
