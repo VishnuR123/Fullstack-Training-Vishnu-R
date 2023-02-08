@@ -1,5 +1,0 @@
-let array = ['a', 'b', 'c', 'd', 'e', 'f'];
-
-array.length = 0;
-
-console.log(array);
