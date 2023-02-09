@@ -1,0 +1,227 @@
+<html>
+    <head><meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback | Men's Shoe Website</title>
+        <link rel="stylesheet" href="stylee.css ">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        .table-1{
+            width: 80%;
+            border-collapse: collapse;
+        }
+        .table-1 td{
+            padding: 10px 30px;  
+        }
+        .table-1 td input {
+            width: 300px;
+            height: 30px;
+            padding: 5px;
+        }
+        .table-1 td input[type="radio"] {
+            padding: 5px;
+            margin-left: 300px;
+            width: 20px;
+        }
+
+        .headd {
+            font-size: 50px;      
+            line-height: 60px;
+            margin: 25px 0 0;
+            padding-right: 50px 0px 0px;
+        }
+        .btn1{
+            display: inline-block;
+            background: #FD3A00;
+            color: white;
+            border:none;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: background  0.5s;
+            transition: color 0.5s;
+        }
+        .btn1:hover{
+            background: #f3efef;
+            color:#07131a;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/Adidas White Logo.png" alt="error" width="125px"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Form.html">Careers</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/shop.png" width="30px" height="30px" alt=""></a>
+            </div>
+        </div></div>
+
+        <!-- ------------------------------ -->
+        <div style="padding:20px 0px 0px 300px  ;">
+        <h1 class="headd">CAREERS</h1> <br>
+            <small>Here’s an invitation to change the world, to see what’s possible and share the love of sport. Join team adidas today.</small>
+        </div>
+        
+        <div style="padding: 30px 300px 30px;">
+         <form action="#">
+            <center>   
+            <table class="table-1">
+                <tr>
+                    <td>Enter Name:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Enter Email:</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>Enter Age:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Enter Birth Date:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Input Your Image:</td>
+                    <td><input type="image" style="padding:0px 0px;"></td>
+                </tr>
+                <tr>
+                    <td>Enter Position Type:</td>
+                    <td><input type="text" list="teams"></td>
+                </tr>
+                <tr>
+                    <td>Enter Desired DOJ:</td>
+                    <td><input type="month"></td>
+                </tr>
+                <tr>
+                    <td>Enter LinkedIn URL:</td>
+                    <td><input type="url" id="homepage" name="homepage"></td>
+                </tr>
+                <tr>
+                    <td>Enter Your English Proficiency:</td>
+                    <td><input type="range" id="vol" name="vol" min="0" max="50"></td>
+                </tr>
+                <tr>
+                    <td>Enter Desired Location:</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="radio">
+                            <label><input type="radio" id='regular' name="optradio"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="radiotext">
+                            <label for='regular'>HERZOGENAURACH<small>&nbsp;&nbsp;GERMANY</small></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="radio">
+                            <label><input type="radio" id='regular' name="optradio"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="radiotext">
+                            
+                            <label for='regular'>DELHI<small>&nbsp;&nbsp;INDIA</small></label
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="radio">
+                            <label><input type="radio" id='regular' name="optradio"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="radiotext">
+                            <label for='regular'>AMSTERDAM<small>&nbsp;&nbsp;NETHERLANDS</small></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="radio">
+                            <label><input type="radio" id='regular' name="optradio"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="radiotext">
+                            <label for='regular'>PORTLAND<small>&nbsp;&nbsp;UNITED STATES</small></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Input The Resume</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit" class="btn1"></td>
+                    <td><input type="reset" class="btn1"></td>
+                </tr>
+            </table>
+            </center>
+        </form>  
+        </div>
+
+
+        <datalist id="teams">
+                <option value="Full Time"></option>
+                <option value="Internship"></option>
+                <option value="Limited Duration"></option>
+                <option value="Part Time"></option>
+                <option value="Pupil"></option>
+                <option value="Seasonal"></option>
+                <option value="Temp"></option>
+        </datalist>
+    
+
+
+        <!-- ------------------------------ -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/adidasIN/?brand_redir=182162001806727">Facebook</a></li>
+                            <li><a href="https://twitter.com/adidas?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/adidas/?hl=en">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/user/adidas">Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/Adidas White Logo.png" alt="">
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Contact.html">Contact Us</a></li>
+                            <li><a href="product.html">Products</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

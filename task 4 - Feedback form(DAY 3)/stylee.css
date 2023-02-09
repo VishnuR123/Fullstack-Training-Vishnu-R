@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
+}
+data:hover::after{
+    content:'(Address : ' attr(value)')';
+  }
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    background-color:#07131a;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p{
+    color: #555;
+}
+.container{
+    /*max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;*/
+}
+.small-containerr{
+    padding-left: 80px;
+    margin: 0;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    padding-right: 50px;
+}
+.col-2 p{
+    padding-right: 20px;
+
+}
+.btn{
+    display: inline-block;
+    background: #FD3A00;
+    color: white;
+    border-color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background  0.5s;
+    transition: color 0.5s;
+}
+.btn:hover{
+    background: #f3efef;
+    color:#07131a;
+}
+.header{
+    background: radial-gradient(#fff,#f8e7e0);
+}
+
+.header row{
+    margin-top: 70px;
+}
+
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 400px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    transition: transform 0.5s;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-4{
+flex-basis:25% ;
+padding: 10px;
+min-width: 25px;
+padding-right: 25px;
+
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position:relative;
+    line-height: 60px;
+    color: #555;
+}
+.rating .fa-solid, .fa-regular{
+    color: #fa4a32;
+}
+
+.col-3:hover{
+    transform: translateY(-5px);
+}
+
+.footer{
+    background: #07131a;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 30px 0 20px;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 10px;
+}
+.footer-col-1{
+    flex-basis: 33%;
+    text-align: center;
+}
+.footer-col-2{
+    flex:1;
+    display: flex;
+      justify-content: center;
+}
+.footer-col-2 img{
+    width: 35%;
+    margin-bottom: 20px;
+    
+}
+.footer-col-3{
+    flex-basis:33%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+/* ---------all pdts page-------- */
+
+.row-2{
+    justify-content: space-between;
+    margin: 70px auto 50px;
+}
+
+select{
+    border:1px solid #ff523b ;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+/* <!-- ---------cart item details----------- --> */
+
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display:flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;  
+}
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width:80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+/*------about------*/
+.about{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.aboutcontent{
+    padding: 30px 325px 60px;
+    display: flex;
+    justify-content: center;
+}
+.image-container {
+    position: relative;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  .image-container1 {
+    position: relative;
+  }
+  .text-overlay-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
