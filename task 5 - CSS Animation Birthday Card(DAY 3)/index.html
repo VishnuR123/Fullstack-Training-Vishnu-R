@@ -1,0 +1,361 @@
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+      html{
+       overflow-y: scroll;
+      }
+      body {
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+      }
+      /*----balloon----*/
+      #balloon-container {
+        height: 100vh;
+        padding: 1em;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        transition: opacity 50ms;
+      }
+
+      .balloon {
+        height: 125px;
+        width: 105px;
+        border-radius: 75% 75% 70% 70%;
+        position: relative;
+        color: rgba(0, 0, 0, 0.493);
+        visibility: hidden; 
+        margin: 200px 0 0 50px;
+        animation: float 5s ease-in infinite
+      }
+
+      .balloon:before {
+        content: "";
+        height: 75px;
+        width: 1px;
+        padding: 1px;
+        background-color: #FDFD96;
+        display: block;
+        position: absolute;
+        top: 125px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .balloon:after {
+          content: "▲";
+          text-align: center;
+          display: block;
+          position: absolute;
+          color: inherit;
+          top: 120px;
+          left: 0;
+          right: 0;
+          margin: auto;
+      }
+
+      @keyframes float {
+        0% {transform: translateY(100vh);
+        opacity: 1;visibility: visible;}
+        99.99% {transform: translateY(-300vh);
+        opacity: 0;}
+        100%{visibility: hidden;}
+      }
+
+      /*----giftbox----*/
+
+      .box{
+        background-color: #0e9fe2;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top:85%;
+        margin-top: -100px;
+        margin-left: -100px;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-name: entry;
+      }
+      @keyframes entry{
+        from {         
+          top:55%;
+        }
+        to{
+          top:85%;
+          left: 50%;
+        }
+      }
+      .ribbon{
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 50px solid #f7f317;
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        left: 53.25%;
+        top: 78%;
+        margin-top: -100px;
+        margin-left: -100px;
+        rotate:-10deg;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-name: entryribbon2;
+      }
+      @keyframes entryribbon2{
+        0% {
+          top: 48%;
+        }
+        100% {
+          top:78%;
+          left: 53.25%;
+        }
+      }  
+      .ribbon-2{
+        position: absolute;
+        left: 57.5%;
+        top: 78%;
+        margin-top: -100px;
+        margin-left: -100px;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 50px solid #f7f317;
+        border-bottom: 25px solid transparent;
+        rotate: 10deg;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-name: entryribbon;
+      }
+      @keyframes entryribbon{
+        0% {
+          top: 48%;
+        }
+        100% {
+          top: 78%;
+          left: 57.5%;
+        }  
+      }
+      .ribbon-3 {        
+        background-color: #f7f317;
+        width: 20px;
+        height: 200px;
+        position: absolute;
+        left: 56.5%;
+        top: 85%;
+        margin-top: -100px;
+        margin-left: -100px;
+        animation: bar1 2s linear;
+      }
+      @keyframes bar1{
+        0% {
+          top: 55%;
+        }
+        100% {
+          top: 85%;
+        }  
+      }
+      .ribbon-4 {        
+        background-color: #f7f317;
+        width: 200px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        top: 99%;
+        margin-top: -100px;
+        margin-left: -100px;
+        animation: bar2 2s linear;
+      }
+      @keyframes bar2{
+        from{
+          top:68%;
+        }
+        to{
+          top:99%
+        }
+      }
+      /*----card----*/
+      .card{
+        font-family: 'Itim', cursive;
+        font-size: larger;
+        position: absolute;
+        width: 600px;
+        height: 650px;
+        background-color: #ffffff;
+        left: 49.80%;
+        border-radius:5%;
+        opacity: 0.7;
+        text-align: center;
+        animation-name: cardd;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+      }
+      @keyframes cardd {
+        0%{
+          left: 28%;
+        }
+        70%{left:28%;}
+        90%{
+          left: 49.80%;
+        }
+      }
+      .img-card{
+        width: 600px;
+        height: 650px;
+        left:5.3%;
+        background-color: rgb(255, 255, 255,0.7);        
+        position: absolute;
+        visibility:visible;
+        border-radius:5%;
+        animation-name: imgcard;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+      }
+      @keyframes imgcard {
+        0%{
+          background-color: rgb(255, 255, 255,0);
+          border-radius: 0;
+          visibility: hidden;
+        }
+        95%{
+          background-color: rgb(255, 255, 255,0);
+          visibility: hidden;
+        }
+        100%{
+          background-color: rgb(255, 255, 255,0.7);
+          border-radius:5%;
+          visibility: visible;
+        }
+      }
+
+      /* ---stars--- */
+      .stars{
+        position: absolute;
+        font-size: 20px;
+        animation-name: stars;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes stars {
+        0%{transform: skew(0);}
+        50%{transform: skew(-0.04turn, 10deg);}
+        100%{transform: skew(0);}
+      }
+
+      /* ---para--- */
+      .para{
+        font-size: larger;
+        animation-name: para;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+        padding:15px 50px;
+        word-wrap: break-word;
+      }
+      @keyframes para{
+        0%{font-size: 19.2px;}
+        70%{font-size: 19.2px;}
+        100%{font-size: larger;}
+      }
+
+      /* ---text--- */
+      .overlay {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        height: 450px;
+        width: 300px;
+        transition: .5s ease;
+        background-color: rgb(255, 255, 255,0);
+      }
+
+      .container:hover .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .container:hover .text {
+        color: rgb(12, 157, 253,1);
+      }
+
+      .text {
+        font-family: 'Itim', cursive;
+        color: rgb(12, 157, 253,0);
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="img-card">
+        <p class="stars" style="top:15%;left:15%;">&#10024;</p>
+        <p class="stars" style="top:45%;left:15%;">&#127880;</p>
+        <p class="stars" style="top:30%;left:10%;">&#127856;</p>
+        <p class="stars" style="top:60%;left:10%;">&#127874;</p>
+        <p class="stars" style="top:15%;left:80%;">&#x1F36D;</p>
+        <p class="stars" style="top:45%;left:80%;">&#x1F973;</p>
+        <p class="stars" style="top:30%;left:85%;">&#127852;</p>
+        <p class="stars" style="top:60%;left:85%;">&#127873;</p>
+        <div class="container">
+          <img src="frnd.jpg" alt="" class="imggc" width="300px" height="450px" style="position: absolute;opacity: 1;top:15%;left: 25%;">
+          <div class="overlay">
+            <div class="text"><h1>11.2.2021</h1>That time we went to beach and played volleyball.</div>
+          </div>
+        </div>
+        <h2 style="position: absolute;top: 85%;left: 33%;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: large;">Hover over the image!</h2>
+      </div>
+      <div class="card">
+        <br><br><br>
+        <h1>Happy Birthday!!!</h1>
+        <p class="para">Happy birthday to my dear friend! <BR>On this special day, I wish you all the joy, happiness, and blessings you deserve. May your life be filled with love, laughter, and amazing memories. You are a true friend, always there to lend a hand, make me smile, and brighten my day. I am so grateful to have you in my life. May your birthday be as wonderful as you are, and may the year ahead bring you everything you hope for. Cheers to another year of friendship and adventures!</p>
+      </div>
+      <div class="box"></div>
+      <div class="ribbon "></div>
+      <div class="ribbon-2"></div>
+      <div class="ribbon-3 "></div>
+      <div class="ribbon-4 "></div>
+    <div id="balloon-container">
+      <div class="balloon" style="background-color: rgb(252, 3, 15);
+      animation: float 8s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgba(0,128,0,0.7);
+      animation: float 9s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(74, 252, 3);
+      animation: float 8s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgba(0, 45, 128, 0.7);
+      animation: float 10s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(231, 3, 252);
+      animation: float 9s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(255, 238, 0);
+      animation: float 9s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(252, 3, 169);
+      animation: float 8s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(11, 255, 222);
+      animation: float 10s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(252, 3, 15);
+      animation: float 10s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(200, 255, 0);
+      animation: float 9s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(252, 3, 15);
+      animation: float 8s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(19, 167, 19);
+      animation: float 10s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(255, 0, 149);
+      animation: float 9s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(3, 119, 252);
+      animation: float 8s ease-in 1"></div>
+      <div class="balloon" style="background-color: rgb(3, 248, 207);
+      animation: float 10s ease-in 1"></div>
+
+    </div>
+  </body>
+</html>
