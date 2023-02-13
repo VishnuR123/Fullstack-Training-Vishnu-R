@@ -2,17 +2,19 @@
 
 For example, oddishOrEvenish(121) should return "Evenish", since 1 + 2 + 1 = 4. oddishOrEvenish(41) should return "Oddish", since 4 + 1 = 5.*/
 
-function oddishevenish(x){
-    let num=0;    
+var a = 121;
+const evenishororoddish=(x)=>{
+    var ans = 0;
     while(x>0){
-        let temp=x%10;
-        num+=temp;
-        x/=10;     
-    }num=Math.round(num);
-    num=num-1;    
-    if(num%2==0){
+        var rem = x%10;
+        ans = ans+rem;
+        x=Math.round(x/10);
+    }
+    if(ans%2==0){
         return "evenish";
     }else{
         return "oddish";
-    }console.log(num);
-}console.log(oddishevenish(121));
+    }
+}
+var ans = evenishororoddish(a);
+console.log(ans);
