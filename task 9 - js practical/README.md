@@ -5,3 +5,8 @@ OUTPUT<BR>
 <br>
 
 2. Class Utility<br>
+![image](https://user-images.githubusercontent.com/105124943/219963943-da28736d-6ecd-45d3-b72a-0aa6b092a6c1.png)
+![image](https://user-images.githubusercontent.com/105124943/219963918-725518b3-54f8-4d7b-a62f-780686944504.png)
+<br>
+
+3. 
