@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+.applogo{
+  height: 30vmin;
+position: relative;
+left:20%;
+}
+.name{
+  position: absolute;
+  top:10%;
+  left:40%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.donut{
+  position: absolute;
+  top: 32%;
+  left:14%;
+  border-radius: 50%;
+  width:400px;
+  margin: 0;
+
+}
+.para{
+  position: absolute;
+  top: 40%;
+  left:50%;
+  width:500px;
+}
+.price{
+  position: absolute;
+  top:34%;
+  left:50%;
+}
+
+
