@@ -1,1 +1,2 @@
-
+TASK - CREATE 5 DIFFERENT COMPONENTS FOR PRODUCTNAME,IMAGE,LOGO,WEBSITENAME AND PRICE.<br>
+![image](https://user-images.githubusercontent.com/105124943/220094320-92d851ec-1616-4dfd-8f19-7debeddb3ac4.png)
