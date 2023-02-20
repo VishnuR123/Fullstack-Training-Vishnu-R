@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .div-1{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+            }
+            button{
+                width: 200px;
+                height: 30px;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div-1">
+            <button onclick="change()">CHANGE</button>
+        </div>
+        <h1 style="position:absolute;top:50%;"></h1>
+        <script>
+            function change(){
+                var randomColor = "#000000".replace(/0/g,function(){return (Math.floor(Math.random()*16)).toString(16);});
+                document.getElementsByTagName("body")[0].style.backgroundColor=randomColor;
+                document.getElementsByTagName("h1")[0].innerText="\n"+randomColor;
+            }
+
+        </script>
+    </body>
+</html>

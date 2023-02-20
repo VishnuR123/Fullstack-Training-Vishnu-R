@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+        <div class="div">
+
+        </div>
+        <script>
+            var div=document.getElementsByClassName("div")[0];
+            div.style.width="100%";
+            div.style.height="100%";
+            for(let i=0;i<=100;i++){
+                var box=document.createElement("div");
+                box.style.height="150px";
+                box.style.width="150px";
+                box.innerText=i;
+                if(i%2==0){
+                    box.style.backgroundColor="lightgreen";
+                }else{
+                    box.style.backgroundColor="lightblue";
+                }
+                box.style.textAlign="center";
+                box.style.lineHeight="150px";
+                box.style.fontSize="50px";
+                box.style.fontWeight="700";
+                box.style.fontFamily="'Trebuchet MS'";
+                box.style.color="white";
+                box.style.float="left";
+                box.style.margin="8px";
+                box.style.borderRadius="20px";
+                div.append(box);
+            }
+
+        </script>
+    </body>
+</html>

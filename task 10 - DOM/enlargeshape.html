@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            .div-1{
+                /* background-color:crimson; */
+                border-radius: 50%;
+                position: absolute;
+                top: 27%;
+                left:40%;
+            }
+        </style>       
+    </head>
+    <body>
+        <div class="div-1" onmouseover="big(this)" onmouseout="normal(this)">
+
+        </div>
+        <script>
+            var elem=document.getElementsByClassName("div-1")[0];
+            elem.style.backgroundColor="crimson";
+            elem.style.width="200px";
+            elem.style.height="200px";
+            var text=document.createElement("h1");
+            text.innerText="hover";
+            text.style.fontSize="30px";
+            text.style.fontWeight="600";
+            text.style.position="absolute";
+            text.style.color="white";
+            text.style.top="28%";
+            text.style.left="32%";
+            elem.appendChild(text);
+
+            function normal(x){
+                elem.style.backgroundColor="crimson";
+                x.style.width="200px";
+                x.style.height="200px";
+                children = x.children[0];
+                children.style.fontSize="30px";
+                children.style.fontWeight="600";
+            }
+            function big(x){
+                elem.style.backgroundColor="crimson";
+                x.style.width="400px";
+                x.style.height="400px";
+                children = x.children[0];
+                children.style.fontSize="60px";
+                children.style.fontWeight="600";
+            }
+        </script>
+    </body>
+</html>
